@@ -1,0 +1,115 @@
+<!-- <div class="navbar-fixed"> -->
+<!-- <nav class="top-nav light-blue lighten- 1" role="navigation">
+    <div class="container">
+      <div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo">Goffee</a>
+        <ul class="right">
+          <li><a href="#">Pricing</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#">Navbar Link</a></li>
+           <li><a href="#">Navbar Link</a></li>
+            <li><a href="#">Navbar Link</a></li>
+             <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      </div>
+    </div>
+  </nav> -->
+<!-- </div> -->
+
+<!-- Current Stable -->
+<header>
+<nav class="blue darken-4">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo"><img src="../../assets/images/logo.png"></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="mobile.html">Pricing</a></li>
+        <li><a href="sass.html">Home</a></li>
+        <li><a href="components.html">Order</a></li>
+        <li><a href="javascript.html">Account</a></li>
+        <li><a href="mobile.html">Setting</a></li>
+        <li><a href="mobile.html">Logout</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+         <li><a href="mobile.html">Pricing</a></li>
+        <li><a href="sass.html">Home</a></li>
+        <li><a href="components.html">Order</a></li>
+        <li><a href="javascript.html">Account</a></li>
+        <li><a href="mobile.html">Setting</a></li>
+        <li><a href="mobile.html">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- Just pure side nav bar -->
+<!-- <ul id="slide-out" class="side-nav">
+    <li><a href="#!">First Sidebar Link</a></li>
+    <li><a href="#!">Second Sidebar Link</a></li>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>
+ -->
+
+<!-- <header>
+  <nav class="top-nav">
+    <div class="container">
+      <div class="nav-wrapper"> <a href="#!" class="brand-logo"><img src="../../assets/images/logo.png"></a></div>
+    </div>
+  </nav>
+    <div class="row">
+    <div class="col s12 m4 l3">
+  <div class="container">
+  <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full"><i class="mdi-navigation-menu"></i></a>
+  </div>
+  <ul id="nav-mobile" class="side-nav fixed">
+    <li class="logo"><a id="logo-container" href="http://materializecss.com/" class="brand-logo">
+      <li class="bold"><a href="about.html" class="waves-effect waves-teal">About</a></li>
+      <li class="bold"><a href="getting-started.html" class="waves-effect waves-teal">Getting Started</a></li>
+      <li class="bold active"><a href="http://materializecss.com/mobile.html" class="waves-effect waves-teal">Mobile</a></li>
+      <li class="bold"><a href="showcase.html" class="waves-effect waves-teal">Showcase</a></li>
+    </ul>
+    </div>
+    </div>
+</header> -->
+
+<script type="text/javascript">
+    (function($){
+    $(function(){
+      $('.button-collapse').sideNav({menuWidth: 200, activationWidth: 170});
+    });
+  })(jQuery);
+</script>
+
+
+
+<!-- <div class="navbar navbar-default navbar-static-top" ng-controller="NavbarCtrl">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" ng-click="isCollapsed = !isCollapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">goffee-app</a>
+    </div>
+    <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav">
+        <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
+            <a ng-href="{{item.link}}">{{item.title}}</a>
+        </li>
+        <li ng-show="isAdmin()" ng-class="{active: isActive('/admin')}"><a href="/admin">Admin</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li ng-hide="isLoggedIn()" ng-class="{active: isActive('/signup')}"><a href="/signup">Sign up</a></li>
+        <li ng-hide="isLoggedIn()" ng-class="{active: isActive('/login')}"><a href="/login">Login</a></li>
+        <li ng-show="isLoggedIn()"><p class="navbar-text">Hello {{ getCurrentUser().name }}</p> </li>
+        <li ng-show="isLoggedIn()" ng-class="{active: isActive('/settings')}"><a href="/settings"><span class="glyphicon glyphicon-cog"></span></a></li>
+        <li ng-show="isLoggedIn()" ng-class="{active: isActive('/logout')}"><a href="" ng-click="logout()">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</div> -->

@@ -1,75 +1,100 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 
 <div class="row">
- <div class="progress">
+<!--  <div class="progress">
       <div class="indeterminate"></div>
-  </div>
-	<div class="col s12 m6 l3">
-		<!-- Promo Content 1 goes here -->
-		<div class="card">
-			<div class="card-image waves-effect waves-block waves-light">
-				<img class="activator" src="../../assets/images/shop4.jpg">
-			</div>
-			<div class="card-content">
-				<span class="card-title activator grey-text text-darken-4">The Beast<i class="mdi-navigation-more-vert right"></i></span>
-				<p><a href="#" class="blue-text text-darken-2">500 meters <i class="small mdi-maps-place"></i></a></p>
+  </div> -->
+
+  <!-- anything typed in here is magically saved to Firebase! -->
+  <!-- <input type="text" ng-model="data.text"/> -->
+  <!-- all changes from Firebase magically appear here! -->
+<!--   <h1>You said: {{ users.fName }}</h1> -->
+
+  	<div class="col s12 m12 l12">
+  		<!-- Promo Content 1 goes here -->
+  		<div class="card">
+  			<div class="card-image waves-effect waves-block waves-light">
+  				<img class="activator" src="../../assets/images/shop4.jpg">
+  			</div>
+  			<div class="card-content">
+  				<span class="card-title activator grey-text text-darken-4">The Beast <i class="fa fa-ellipsis-v pull-right"></i></span>
+  				<p><a href="#" class="blue-text text-darken-2">500 meters   <i class="fa fa-map-marker fa-2x"></i></a></p>
+				<!-- <span class="card-title activator grey-text text-darken-4">The Beast<i class="fa fa-ellipsis-v pull-right"></i></span>
+				<p><a href="#" class="blue-text text-darken-2">500 meters <i class="fa fa-map-marker fa-2x"></i></a></p> -->
 			</div>
 			<div class="card-reveal">
-				<span class="card-title grey-text text-darken-4">The Beast - Cafe, Bar  Restaurant <i class="mdi-navigation-close right"></i></span>
+				<!-- <span class="card-title grey-text text-darken-4">Bridge Cafe<i class="fa fa-times pull-right"></i></span> -->
+				<span class="card-title grey-text text-darken-4">The Beast - Cafe, Bar  Restaurant    <i class="fa fa-times pull-right"></i></span>
 				<p>17 Jalan Klapa, 199329</p>
+				<!-- <a class="waves-effect waves-light btn"><img src="https://www.google.co.uk/images/srpr/logo3w.png"  height="40" /></a> -->
+				<span> <a class="btn-floating btn-large waves-effect waves-light red"  ng-init="hide_message=false" ng-click="makeOrder('Hot Mocha', 'The Beast', 'hide_message')"><img src="../../assets/images/hot.png"  height="50" /></a></span>
+				<span> <a class="btn-floating btn-large waves-effect waves-light blue" ng-init="hide_message=false"><img src="../../assets/images/cold.png"  height="50" ng-click="makeOrder('Cold latte', 'The Beast', 'hide_message')"/></a></span>
+				<br />
+				<span ng-init="hide_message=false" ng-model="hide_message" ng-click="successMsg(hide_message)" ng-show="hide_message">You order has made successfully.</span>
 			</div>
 		</div>
 	</div>
-	<div class="col s12 m6 l3">
+	<div class="col s12 m12 l12">
 		<!-- Promo Content 2 goes here -->
 		<div class="card">
 			<div class="card-image waves-effect waves-block waves-light">
 				<img class="activator" src="../../assets/images/shop3.jpg">
 			</div>
 			<div class="card-content">
-				<span class="card-title activator grey-text text-darken-4">Bridge Cafe <i class="mdi-navigation-more-vert right"></i></span>
-				<p><a href="#" class="blue-text text-darken-2">900 meters <i class="small mdi-maps-place"></i></a></p>
+				<span class="card-title activator grey-text text-darken-4">Bridge Cafe <i class="fa fa-ellipsis-v pull-right"></i></span>
+				<p><a href="#" class="blue-text text-darken-2">900 meters <i class="fa fa-map-marker fa-2x"></i></a></p>
 			</div>
 			<div class="card-reveal">
-				<span class="card-title grey-text text-darken-4">Bridge Cafe<i class="mdi-navigation-close right"></i></span>
+				<span class="card-title grey-text text-darken-4">Bridge Cafe<i class="fa fa-times pull-right"></i></span>
 				<p>674 North Bridge Road #01-01, off Haji Lane. Singapore.</p>
+
+				<span> <a class="btn-floating btn-large waves-effect waves-light red" ng-init="hide_message1=false"><img src="../../assets/images/hot.png"  height="50"  ng-click="makeOrder('Hot Cappuccino', 'The Beast', 'hide_message1')"/></a></span>
+				<span> <a class="btn-floating btn-large waves-effect waves-light blue" ng-init="hide_message1=false"><img src="../../assets/images/cold.png"  height="50" ng-click="makeOrder('Cold Cappuccino', 'The Beast', 'hide_message1')"/></a></span>
+				<br  />
+				<span ng-init="hide_message=false" ng-model="hide_message" ng-click="successMsg(hide_message1)" ng-show="hide_message1">You order has made successfully.</span>
+
 			</div>
 		</div>
 	</div>
-	<div class="col s12 m6 l3">
+	<div class="col s12 m12 l12">
 		<!-- Promo Content 3 goes here -->
 		<div class="card">
 			<div class="card-image waves-effect waves-block waves-light">
 				<img class="activator" src="../../assets/images/shop2.jpg">
 			</div>
 			<div class="card-content">
-				<span class="card-title activator grey-text text-darken-4">Kofu <i class="mdi-navigation-more-vert right"></i></span>
-				<p><a href="#" class="blue-text text-darken-2">1.3 km<i class="small mdi-maps-place"></i></a></p>
+				<span class="card-title activator grey-text text-darken-4">Kofu <i class="fa fa-ellipsis-v pull-right"></i></span>
+				<p><a href="#" class="blue-text text-darken-2">1.3 km<i class="fa fa-map-marker fa-2x"></i></a></p>
 			</div>
 			<div class="card-reveal">
-				<span class="card-title grey-text text-darken-4">Kofu @ UOB<i class="mdi-navigation-close right"></i></span>
+				<span class="card-title grey-text text-darken-4">Kofu @ UOB<i class="fa fa-times pull-right"></i></span>
 				<p> UOB ATM - StamfoRoad Road, Singapore 178901</p>
+
+				<span> <a class="btn-floating btn-large waves-effect waves-light red"><img src="../../assets/images/hot.png"  height="50" /></a></span>
+				<span> <a class="btn-floating btn-large waves-effect waves-light blue"><img src="../../assets/images/cold.png"  height="50" /></a></span>
 			</div>
 		</div>
 	</div>
-	<div class="col s12 m6 l3">
+	<div class="col s12 m12 l12">
 		<!-- Promo Content 3 goes here -->
 		<div class="card">
 			<div class="card-image waves-effect waves-block waves-light">
 				<img class="activator" src="../../assets/images/shop1.jpg">
 			</div>
 			<div class="card-content">
-				<span class="card-title activator grey-text text-darken-4">Nanyang Cafe <i class="mdi-navigation-more-vert right"></i></span>
-				<p><a href="#" class="blue-text text-darken-2">900 meters <i class="small mdi-maps-place"></i></a></p>
+				<span class="card-title activator grey-text text-darken-4">Nanyang Cafe <i class="fa fa-ellipsis-v pull-right"></i></span>
+				<p><a href="#" class="blue-text text-darken-2">900 meters <i class="fa fa-map-marker fa-2x"></i></a></p>
 			</div>
 			<div class="card-reveal">
-				<span class="card-title grey-text text-darken-4">Nanyang Cafe<i class="mdi-navigation-close right"></i></span>
+				<span class="card-title grey-text text-darken-4">Nanyang Cafe<i class="fa fa-times pull-right"></i></span>
 				<p>Address: 114 Tanjong Pagar Road Singapore 6226 2657</p>
+
+				<span> <a class="btn-floating btn-large waves-effect waves-light red"><img src="../../assets/images/hot.png"  height="50" /></a></span>
+				<span> <a class="btn-floating btn-large waves-effect waves-light blue"><img src="../../assets/images/cold.png"  height="50" /></a></span>
 			</div>
 		</div>
 	</div>
 </div>
-
 
 
 <!-- <header class="hero-unit" id="banner">

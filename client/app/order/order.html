@@ -1,0 +1,25 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<div class="row">
+	<p class="lead">Current order list</p>
+	<table>
+		<thead>
+			<tr>
+				<th data-field="id">Shop Name</th>
+				<th data-field="name">Order Type</th>
+				<th data-field="price">Order Time</th>
+				<th data-field="price">Time to Wait</th>
+			</tr>
+		</thead>
+
+		<tbody >
+			<tr ng-repeat="order in orderList">
+				<td> {{ order.shop_name }} </td>
+				<td> {{ order.order_type }} </td>
+				<td> {{order.order_time | date:'yyyy-MM-dd'}} </td>
+				<td> in 15 minutes </td>
+			</tr>
+		</tbody>
+	</table>
+
+</div>

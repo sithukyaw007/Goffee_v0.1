@@ -1,0 +1,3 @@
+export ENV=debug
+export FIREBASE_TOKEN=J6J2sS9mjvIDQMxGtTFXlUPh776XmcA70sEL3Grt
+export FIREBASE_URL=https://feedback.firebaseio.com/

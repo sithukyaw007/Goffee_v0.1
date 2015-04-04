@@ -5,13 +5,13 @@ angular.module('goffeeAppApp')
     $scope.awesomeThings = [];
 
     //We can replace this with a Firebase url later on.
-    debugger;
-    var ref = new Firebase('https://feeback.firebaseio.com/abc');
+    // debugger;
+    // var ref = new Firebase('https://feeback.firebaseio.com/abc');
 
-    // download the data into a local object
-    $scope.data = $firebaseObject(ref);
-    console.log('Scope data is ' + $scope.data);
-    $scope.users = $firebaseArray(ref);
+    // // download the data into a local object
+    // $scope.data = $firebaseObject(ref);
+    // console.log('Scope data is ' + $scope.data);
+    // $scope.users = $firebaseArray(ref);
 
 
 

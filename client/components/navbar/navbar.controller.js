@@ -13,7 +13,6 @@ angular.module('goffeeAppApp')
     $scope.getCurrentUser = Auth.getCurrentUser;
 
     $scope.logout = function() {
-      debugger;
       Auth.logout();
       $location.path('/login');
     };

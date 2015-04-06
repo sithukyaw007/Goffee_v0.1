@@ -1,24 +1,15 @@
 'use strict';
 
 angular.module('goffeeAppApp')
-  .controller('MainCtrl', function ($scope, $http, socket, makeOrderService) {
+  .controller('MainCtrl', function ($scope, $http, Auth, $location, socket,  makeOrderService) {
     $scope.awesomeThings = [];
 
     //We can replace this with a Firebase url later on.
-
-    // var ref = new Firebase('https://feeback.firebaseio.com/abc');
-
-    // // download the data into a local object
-    // $scope.data = $firebaseObject(ref);
-    // console.log('Scope data is ' + $scope.data);
-    // $scope.users = $firebaseArray(ref);
-
-
- $scope.logout = function() {
-      debugger;
-      Auth.logout();
-      $location.path('/');
-    };
+    debugger;
+     $scope.isLoggedIn = Auth.isLoggedIn;
+     if($scope.loggedInStatus) {
+          $location.path('/login');
+     }
 
     $http.get('/api/things').success(function(awesomeThings) {
       $scope.awesomeThings = awesomeThings;

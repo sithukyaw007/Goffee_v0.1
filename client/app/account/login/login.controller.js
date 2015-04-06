@@ -14,7 +14,9 @@ angular.module('goffeeAppApp')
           password: $scope.user.password
         })
         .then( function() {
+          debugger;
           // Logged in, redirect to home
+          $scope.loggedInStatus = true;
           $location.path('/');
         })
         .catch( function(err) {

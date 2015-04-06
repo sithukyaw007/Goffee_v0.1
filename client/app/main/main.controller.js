@@ -1,17 +1,25 @@
 'use strict';
 
 angular.module('goffeeAppApp')
-  .controller('MainCtrl', function ($scope, $http, socket, $firebaseArray, $firebaseObject, makeOrderService) {
+  .controller('MainCtrl', function ($scope, $http, socket, $firebase, makeOrderService) {
     $scope.awesomeThings = [];
+    debugger;
+
+
+      $scope.newuser = {};
+      $scope.fName = '';
+      $scope.lName = '';
+      $scope.passw1 = '';
+      $scope.passw2 = '';
+      $scope.school = '';
+      $scope.email = '';
+      $scope.feedback = '';
+      $scope.feedback2 = '';
+      $scope.feedback3 = '';
 
     //We can replace this with a Firebase url later on.
-    debugger;
-    var ref = new Firebase('https://feeback.firebaseio.com/abc');
-
-    // download the data into a local object
-    $scope.data = $firebaseObject(ref);
-    console.log('Scope data is ' + $scope.data);
-    $scope.users = $firebaseArray(ref);
+    var ref = new Firebase("https://feeback.firebaseio.com/");
+    $scope.users = $firebase(ref.child("user")).$asArray();
 
 
 

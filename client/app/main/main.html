@@ -1,6 +1,6 @@
-<div ng-include="'components/navbar/navbar.html'"></div>
+<div ng-include="'components/navbar/navbar.html'" ng-show="isLoggedIn()"></div>
 
-<div class="row">
+<div class="row" ng-show="isLoggedIn()">
 <!--  <div class="progress">
       <div class="indeterminate"></div>
   </div> -->

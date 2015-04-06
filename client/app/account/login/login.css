@@ -21,3 +21,7 @@
   background-color: #fafafa;
   border-color: #ccc;
 }
+
+.bgimg {
+    background-image: url(../../../assets/images/background.png);
+}

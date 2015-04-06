@@ -5,8 +5,7 @@ angular.module('goffeeAppApp', [
   'ngResource',
   'ngSanitize',
   'btford.socket-io',
-  'ui.router',
-  'firebase'
+  'ui.router'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
     $urlRouterProvider

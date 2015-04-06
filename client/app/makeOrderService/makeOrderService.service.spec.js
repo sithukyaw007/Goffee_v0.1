@@ -3,7 +3,7 @@
 describe('Service: makeOrderService', function () {
 
   // load the service's module
-  beforeEach(module('goffeeAppApp'));
+  beforeEach(module('fullstackAppApp'));
 
   // instantiate service
   var makeOrderService;

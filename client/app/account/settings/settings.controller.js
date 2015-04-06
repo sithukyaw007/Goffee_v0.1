@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('goffeeAppApp')
+angular.module('fullstackAppApp')
   .controller('SettingsCtrl', function ($scope, User, Auth) {
     $scope.errors = {};
 

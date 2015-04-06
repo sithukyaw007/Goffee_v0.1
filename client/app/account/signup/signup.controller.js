@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('goffeeAppApp')
+angular.module('fullstackAppApp')
   .controller('SignupCtrl', function ($scope, Auth, $location, $window) {
     $scope.user = {};
     $scope.errors = {};

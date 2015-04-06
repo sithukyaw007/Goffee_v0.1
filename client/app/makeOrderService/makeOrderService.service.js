@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('goffeeAppApp')
+angular.module('fullstackAppApp')
   .service('makeOrderService', function () {
     // AngularJS will instantiate a singleton by calling "new" on this function
 

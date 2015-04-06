@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('goffeeAppApp')
+angular.module('fullstackAppApp')
   .controller('LoginCtrl', function ($scope, Auth, $location, $window) {
     $scope.user = {};
     $scope.errors = {};
@@ -14,9 +14,7 @@ angular.module('goffeeAppApp')
           password: $scope.user.password
         })
         .then( function() {
-          debugger;
           // Logged in, redirect to home
-          $scope.loggedInStatus = true;
           $location.path('/');
         })
         .catch( function(err) {

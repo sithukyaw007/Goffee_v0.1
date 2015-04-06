@@ -15,13 +15,11 @@
       "uirouter": true,
       "bootstrap": false,
       "uibootstrap": false,
-      "socketio": true,
       "mongoose": true,
       "auth": true,
       "oauth": true,
       "googleAuth": true,
-      "facebookAuth": true,
-      "twitterAuth": true
+      "facebookAuth": true
     }
   },
   "generator-ng-component": {

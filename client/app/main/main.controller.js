@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('goffeeAppApp')
+angular.module('fullstackAppApp')
   .controller('MainCtrl', function ($scope, $http, Auth, $location, makeOrderService) {
     $scope.awesomeThings = [];
 

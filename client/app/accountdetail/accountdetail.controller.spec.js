@@ -3,7 +3,7 @@
 describe('Controller: AccountdetailCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('goffeeAppApp'));
+  beforeEach(module('fullstackAppApp'));
 
   var AccountdetailCtrl, scope;
 

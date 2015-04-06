@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('goffeeAppApp', [
+angular.module('fullstackAppApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
@@ -39,23 +39,6 @@ angular.module('goffeeAppApp', [
       }
     };
   })
-
-  .factory('orderService', function() {
-   var orderList = [];
-   function set(type, shop) {
-     var order = {order_type: type, shop_name: shop, order_time: new Date()};
-    orderList.push(order);
-   }
-   function get() {
-    return orderList;
-  }
-
-  return {
-    set: set,
-    get: get
-  }
-
-})
 
   .run(function ($rootScope, $location, Auth) {
     // Redirect to login if route requires auth and you're not logged in

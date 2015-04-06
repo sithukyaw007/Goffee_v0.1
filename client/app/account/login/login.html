@@ -1,23 +1,23 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 
-<div class="bgimg container">
+<div class="container">
   <div class="row">
-    <div  class="col s12 m12 l12">
-     <center> <p style="color: #26A69A; font-size: 22px">Account Login</p></center>
-      <!-- <p>Accounts are reset on server restart from <code>server/config/seed.js</code>. Default account is <code>test@test.com</code> / <code>test</code></p>
-      <p>Admin account is <code>admin@admin.com</code> / <code>admin</code></p> -->
+    <div class="col-sm-12">
+      <h1>Login</h1>
+      <p>Accounts are reset on server restart from <code>server/config/seed.js</code>. Default account is <code>test@test.com</code> / <code>test</code></p>
+      <p>Admin account is <code>admin@admin.com</code> / <code>admin</code></p>
     </div>
-    <div  class="col s12 m12 l12">
+    <div class="col-sm-12">
       <form class="form" name="form" ng-submit="login(form)" novalidate>
 
-        <div class="form-group" style="color: white">
-          <label style="color: #26A69A">Email</label>
+        <div class="form-group">
+          <label>Email</label>
 
           <input type="email" name="email" class="form-control" ng-model="user.email" required>
         </div>
 
-        <div class="form-group" style="color: white">
-          <label style="color: #26A69A">Password</label>
+        <div class="form-group">
+          <label>Password</label>
 
           <input type="password" name="password" class="form-control" ng-model="user.password" required>
         </div>
@@ -45,13 +45,10 @@
         <hr>
         <div>
           <a class="btn btn-facebook" href="" ng-click="loginOauth('facebook')">
-            <i class="fa fa-facebook"></i> &nbsp;&nbsp;&nbsp; FACEBOOK CONNECT
+            <i class="fa fa-facebook"></i> Connect with Facebook
           </a>
           <a class="btn btn-google-plus" href="" ng-click="loginOauth('google')">
-            <i class="fa fa-google-plus"></i>&nbsp;&nbsp;&nbsp; GOOGLE+ CONNECT &nbsp;
-          </a>
-          <a class="btn btn-twitter" href="" ng-click="loginOauth('twitter')">
-            <i class="fa fa-twitter"></i> &nbsp;&nbsp;&nbsp; TWITTER CONNECT &nbsp;
+            <i class="fa fa-google-plus"></i> Connect with Google+
           </a>
         </div>
       </form>

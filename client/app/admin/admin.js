@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('goffeeAppApp')
+angular.module('fullstackAppApp')
   .config(function ($stateProvider) {
     $stateProvider
       .state('admin', {

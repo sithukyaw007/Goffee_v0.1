@@ -1,4 +1,4 @@
-// Generated on 2015-03-07 using generator-angular-fullstack 2.0.13
+// Generated on 2015-04-06 using generator-angular-fullstack 2.0.13
 'use strict';
 
 module.exports = function (grunt) {
@@ -300,7 +300,7 @@ module.exports = function (grunt) {
     ngtemplates: {
       options: {
         // This should be the name of your apps angular module
-        module: 'goffeeAppApp',
+        module: 'fullstackAppApp',
         htmlmin: {
           collapseBooleanAttributes: true,
           collapseWhitespace: true,
@@ -345,7 +345,6 @@ module.exports = function (grunt) {
             'bower_components/**/*',
             'assets/images/{,*/}*.{webp}',
             'assets/fonts/**/*',
-            'fonts/*',
             'index.html'
           ]
         }, {
@@ -353,12 +352,6 @@ module.exports = function (grunt) {
           cwd: '.tmp/images',
           dest: '<%= yeoman.dist %>/public/assets/images',
           src: ['generated/*']
-        }, {
-          expand: true,
-          dot: true,
-          cwd: 'bower_components/materialize/',
-          src: ['fonts/*.*'],
-          dest: '<%= yeoman.dist %>'
         }, {
           expand: true,
           dest: '<%= yeoman.dist %>',

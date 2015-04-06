@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('goffeeAppApp')
-  .controller('MainCtrl', function ($scope, $http, Auth, $location, socket,  makeOrderService) {
+  .controller('MainCtrl', function ($scope, $http, Auth, $location, makeOrderService) {
     $scope.awesomeThings = [];
 
     //We can replace this with a Firebase url later on.
